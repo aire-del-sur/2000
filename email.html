@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <link rel="stylesheet" href="style.css">
+    <title>EMAIL</title>
+  </head>
+  <body>
+    <div id="container3">
+      <hr>
+      <br><br><br>
+      <h4 id="press3" onclick="sendMail(); return false">MANDAR</h4>
+      <hr id="hr2"><br><br><br>
+  <textarea id="mytext">
+
+    TU MENSAJE AQUI  PORFAVOR
+</textarea>
+<img id="logo2" src="logo.png" alt="">
+
+
+</div>
+<script type="text/javascript">
+  function sendMail() {
+    var link = "mailto:airedelsur2000@hotmail.com"
+             + "?cc=myCCaddress@example.com"
+             + "&subject=" + encodeURIComponent("this is my subject")
+             + "&body=" + encodeURIComponent(document.getElementById('mytext').value);
+
+    window.location.href = link;
+}
+</script>
+
+  </body>
+  </html>
